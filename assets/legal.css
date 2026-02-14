@@ -154,6 +154,10 @@ main {
   animation-delay: 240ms;
 }
 
+.doc-card:nth-child(4) {
+  animation-delay: 360ms;
+}
+
 .doc-card h2 {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   font-size: 1.4rem;
@@ -257,6 +261,113 @@ main {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   font-size: 1.05rem;
   margin-top: 18px;
+}
+
+.sms-consent-form {
+  border: 1px solid rgba(31, 26, 20, 0.14);
+  border-radius: 16px;
+  background: rgba(27, 106, 91, 0.08);
+  padding: 18px;
+  margin: 22px 0;
+  display: grid;
+  gap: 16px;
+}
+
+.sms-consent-field {
+  display: grid;
+  gap: 8px;
+}
+
+.sms-consent-label {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+.sms-consent-form input[type="tel"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(31, 26, 20, 0.18);
+  font-size: 1rem;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.sms-consent-form input[type="tel"]:focus {
+  outline: 2px solid rgba(27, 106, 91, 0.35);
+  outline-offset: 2px;
+}
+
+.sms-consent-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.sms-consent-checkbox-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.sms-consent-checkbox-row input[type="checkbox"] {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.sms-consent-checkbox-row label {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-weight: 500;
+}
+
+.sms-consent-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.sms-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.sms-consent-button {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  cursor: pointer;
+}
+
+.sms-consent-button:disabled {
+  background: rgba(31, 26, 20, 0.2);
+  cursor: not-allowed;
+}
+
+.sms-consent-status {
+  min-height: 1.4rem;
+  font-weight: 600;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.sms-consent-status[data-tone="success"] {
+  color: var(--accent);
+}
+
+.sms-consent-status[data-tone="error"] {
+  color: #b42318;
+}
+
+.sms-consent-status[data-tone="loading"] {
+  color: var(--muted);
 }
 
 .site-footer {

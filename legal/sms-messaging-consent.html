@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GIFT CONNECT SMS Messaging Consent | Gift Connect Legal</title>
+    <meta name="description" content="GIFT CONNECT SMS Messaging Consent" />
+    <link rel="stylesheet" href="../assets/legal.css" />
+    <script src="../assets/sms-consent.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-title">GIFT CONNECT</span>
+          <span class="brand-sub">Parenting Suite Legal Center</span>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../index.html">Legal Home</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="eula.html">EULA</a>
+          <a href="terms-of-use.html">Terms of Use</a>
+          <a href="sms-messaging-consent.html">SMS Consent</a>
+        </nav>
+      </header>
+      <main>
+        <article class="legal-doc">
+          <div class="doc-header">
+            <p class="doc-kicker">Legal Document</p>
+            <h1>GIFT CONNECT SMS Messaging Consent</h1>
+            <p class="doc-meta">Last updated: February 14, 2026</p>
+          </div>
+          <div class="doc-body">
+            <p>
+              This page explains how you can opt in to receive SMS/MMS text messages from Global
+              Investment Foundation for Tomorrow, Inc., dba GIFT CONNECT (“Gift Connect”, “we”, “us”).
+              By opting in, you consent to receive text messages at the mobile number you provide
+              (including via an automatic telephone dialing system).
+            </p>
+
+            <p><u>What we may send</u></p>
+            <ul>
+              <li><p>Daily parenting tips (optional).</p></li>
+              <li><p>Account-related messages, reminders, and service updates.</p></li>
+              <li><p>Customer support responses when you request help.</p></li>
+            </ul>
+
+            <p><u>Opt in (SMS consent)</u></p>
+            <p>
+              To opt in, enter your mobile number below and check the consent box. We will store a
+              timestamped record of your consent.
+            </p>
+
+            <form
+              id="sms-consent-form"
+              class="sms-consent-form"
+              data-api-url="/api/sms-consent"
+              novalidate
+            >
+              <div class="sms-consent-field">
+                <label for="sms-consent-phone" class="sms-consent-label">Mobile number</label>
+                <input
+                  id="sms-consent-phone"
+                  name="phone"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  placeholder="+1 555 555 5555"
+                  required
+                />
+                <p class="sms-consent-hint">
+                  Use E.164 format (e.g., +15555555555). US numbers may be entered as 10 digits.
+                </p>
+              </div>
+
+              <div class="sms-consent-checkbox-row">
+                <input id="sms-consent-checkbox" name="consent" type="checkbox" required />
+                <label for="sms-consent-checkbox" id="sms-consent-consentText">
+                  I agree to receive recurring automated SMS/MMS text messages from Gift Connect at
+                  the phone number provided. Message frequency varies. Reply STOP to opt out, HELP
+                  for help. Message and data rates may apply. Consent is not a condition of purchase.
+                </label>
+              </div>
+
+              <p class="sms-consent-note">
+                By submitting, you also agree to our <a href="privacy-policy.html">Privacy Policy</a>
+                and <a href="terms-of-use.html">Terms of Use</a>.
+              </p>
+
+              <div class="sms-consent-actions">
+                <button type="submit" class="sms-consent-button">Opt In</button>
+                <span id="sms-consent-status" class="sms-consent-status" aria-live="polite"></span>
+              </div>
+
+              <input type="hidden" id="sms-consent-version" name="version" value="2026-02-14" />
+            </form>
+
+            <p><u>Sample message</u></p>
+            <p>Example: “GIFT CONNECT: Your daily parenting tip is ready. Reply STOP to opt out.”</p>
+
+            <p><u>How to opt out</u></p>
+            <p>
+              You can opt out at any time by replying STOP to any message. After opting out, you may
+              receive one final message confirming your request.
+            </p>
+
+            <p><u>Help</u></p>
+            <p>
+              Reply HELP for help, or email us at
+              <a href="mailto:Support@gift-connect.org">Support@gift-connect.org</a>.
+            </p>
+          </div>
+        </article>
+      </main>
+      <footer class="site-footer">
+        <span>GIFT CONNECT</span> | Global Investment Foundation for Tomorrow, Inc.
+      </footer>
+    </div>
+  </body>
+</html>
+
